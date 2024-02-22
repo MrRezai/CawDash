@@ -1,11 +1,4 @@
 import React from 'react';
-import "./styles/style.css";
-import "./styles/styles.css";
-import "./styles/vendor.css";
-import './styles/icomoon.css';
-import './styles/cryptofont.min.css';
-import './styles/bootstrap.min.css';
-import './styles/swiper-bundle.min.css';
 
 export default function Pages(props) {
     const disableLink = (event) => {
