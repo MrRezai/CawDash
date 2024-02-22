@@ -1,8 +1,15 @@
 import React from 'react';
+import { ConnectWallet } from "@thirdweb-dev/react";
+import { Base } from "@thirdweb-dev/chains";
 
 export default function Pages(props) {
     const disableLink = (event) => {
         event.preventDefault();
+    };
+
+    const cawtokenbalance = {
+        1: "0xf3b9569F82B18aEf890De263B84189bd33EBe452",
+        [Base.chainId]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     };
 
     document.querySelector('#root').style.height = '100%'
@@ -47,7 +54,7 @@ export default function Pages(props) {
                                 </ul>
                             </div>
                             <div className="btn-wrap d-md-flex">
-                                {/* <ConnectWallet style={{}}
+                                <ConnectWallet style={{}}
                                     theme={"dark"}
                                     switchToActiveChain={true}
                                     modalSize={"wide"}
@@ -55,7 +62,7 @@ export default function Pages(props) {
                                     className="ConnectButton-margin"
                                     auth={{ loginOptional: false }}
                                     displayBalanceToken={cawtokenbalance}
-                                /> */}
+                                />
                             </div>
                         </div>
                     </div>
@@ -76,9 +83,9 @@ export default function Pages(props) {
                     <p>Until the completion of our artificial intelligence system. The service is currently free, but this is not
                         always the case.</p>
                 </div>
-                <div className="close-container">
+                {/* <div className="close-container">
                     <i className="fas fa-times"></i>
-                </div>
+                </div> */}
             </div>
 
 
