@@ -11,7 +11,7 @@ ReactDOM.render(
   <HashRouter>
     <Switch>
       <Route path={`/caw`} component={AdminLayout} />
-      <Route path={`/landing`} element={<LandingLayout />} />
+      <Route path={`/landing`} component={LandingLayout} />
       <Redirect from={`/`} to="/landing" />
     </Switch>
   </HashRouter>,
