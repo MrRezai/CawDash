@@ -6,8 +6,8 @@ import './styles/icomoon.css';
 import './styles/cryptofont.min.css';
 import './styles/bootstrap.min.css';
 import './styles/swiper-bundle.min.css';
-import { ConnectWallet } from "@thirdweb-dev/react";
-import { Base } from "@thirdweb-dev/chains";
+// import { ConnectWallet } from "@thirdweb-dev/react";
+// import { Base } from "@thirdweb-dev/chains";
 
 function LandingLayout() {
     const disableLink = (event) => {
@@ -19,10 +19,10 @@ function LandingLayout() {
     document.querySelector('html').style.height = '100%'
     document.querySelector('body').classList.add('homepage', 'bg-dark', 'text-white')
 
-    const cawtokenbalance = {
-        1: "0xf3b9569F82B18aEf890De263B84189bd33EBe452",
-        [Base.chainId]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-    };
+    // const cawtokenbalance = {
+    //     1: "0xf3b9569F82B18aEf890De263B84189bd33EBe452",
+    //     [Base.chainId]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    // };
 
     return (
         <>
@@ -62,7 +62,7 @@ function LandingLayout() {
                                 </ul>
                             </div>
                             <div className="btn-wrap d-md-flex">
-                                <ConnectWallet style={{}}
+                                {/* <ConnectWallet style={{}}
                                     theme={"dark"}
                                     switchToActiveChain={true}
                                     modalSize={"wide"}
@@ -70,7 +70,7 @@ function LandingLayout() {
                                     className="ConnectButton-margin"
                                     auth={{ loginOptional: false }}
                                     displayBalanceToken={cawtokenbalance}
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
