@@ -1,15 +1,11 @@
-// chakra imports
-import { Box, ChakraProvider, Portal } from '@chakra-ui/react';
-import Footer from 'components/Footer/Footer.js';
-// core components
-import AuthNavbar from 'components/Navbars/AuthNavbar.js';
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import routes from 'routes.js';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-import theme from 'theme/theme.js';
+import "./styles/style.css";
+import "./styles/styles.css";
+import "./styles/vendor.css";
+import './styles/icomoon.css';
+import './styles/cryptofont.min.css';
+import './styles/bootstrap.min.css';
+import './styles/swiper-bundle.min.css';
 
 export default function Pages(props) {
     const disableLink = (event) => {
@@ -58,7 +54,7 @@ export default function Pages(props) {
                                 </ul>
                             </div>
                             <div className="btn-wrap d-md-flex">
-                                <ConnectWallet style={{}}
+                                {/* <ConnectWallet style={{}}
                                     theme={"dark"}
                                     switchToActiveChain={true}
                                     modalSize={"wide"}
@@ -66,7 +62,7 @@ export default function Pages(props) {
                                     className="ConnectButton-margin"
                                     auth={{ loginOptional: false }}
                                     displayBalanceToken={cawtokenbalance}
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
