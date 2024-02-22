@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: '7032-fontps';
+  src: url(./7032-fontps.woff) format('woff');
+}
+
+.notification-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff5959c4;
+  color: #333;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  margin-right: 15px;
+}
+
+.message-container p {
+  margin: 0;
+  color: white;
+  font-size: 20px !important;
+}
+
+.close-container i {
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+.close-container i:hover {
+  color: #333;
+}
+
+@media only screen and (max-width: 1035px) {
+  .message-container p {
+    font-size: 15px !important;
+  }
+  .photo-Resp{
+    justify-content: center!important;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+  .photo-Resp img:first-child{
+    margin-top: -30% !important;
+  }
+  .photo-Resp img:last-child{
+    margin-bottom: -30% !important;
+  }
+  .photo-Resp img{
+    margin-top: 30% !important;
+  }
+}
+
+.icon{
+  font-style: normal !important;
+}
+
+.a-unv:hover{
+  background: linear-gradient(#ff6666, #6d0a0a) !important;
+  color: #ffffff !important;
+  transition: 500ms;
+}
+
+#text-wallet-btn{
+  width: 200px; /* عرض مورد نظر برای المان */
+  white-space: nowrap; /* جلوگیری از شکستن خط */
+  overflow: hidden; /* مخفی کردن محتوا که از جا خارج می‌شود */
+  text-overflow: ellipsis; /* افزودن نقطه سه به انتهای متن */
+}
+
+/* #disconnect-btn{
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+
+#disconnect-btn{
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+} */
+
+#disconnect-btn{
+  font-weight: bold;
+}
+
+.caw-svg{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.caw-box{
+  margin: auto;
+}
+
+.hopw-p{
+  color: #333 !important;
+  text-align: center;
+  padding: 5%;
+}
+
+.CAWTAG{
+  color: var(--primary-color) !important;
+}
+
+#billboard{
+  padding-bottom: 1% !important;
+}

@@ -24,7 +24,7 @@ var dashRoutes = [
     rtlName: "لوحة القيادة",
     icon: <HomeIcon color="inherit" />,
     component: Dashboard,
-    layout: "/dashboard",
+    layout: "/caw",
   },
   {
     path: "/tables",
@@ -32,7 +32,7 @@ var dashRoutes = [
     rtlName: "لوحة القيادة",
     icon: <StatsIcon color="inherit" />,
     component: Tables,
-    layout: "/dashboard",
+    layout: "/caw",
   },
   {
     path: "/billing",
@@ -40,7 +40,7 @@ var dashRoutes = [
     rtlName: "لوحة القيادة",
     icon: <CreditIcon color="inherit" />,
     component: Billing,
-    layout: "/dashboard",
+    layout: "/caw",
   },
   {
     path: "/rtl-support-page",
@@ -63,7 +63,7 @@ var dashRoutes = [
         icon: <PersonIcon color="inherit" />,
         secondaryNavbar: true,
         component: Profile,
-        layout: "/dashboard",
+        layout: "/caw",
       },
       {
         path: "/signin",

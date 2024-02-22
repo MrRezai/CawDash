@@ -30,7 +30,7 @@ You can read more about the <a href="https://demos.creative-tim.com/docs-purity-
 If you want to get inspiration or just show something directly to your clients,
 you can jump start your development with our pre-built example pages. You will be able
 to quickly set up the basic structure for your web project.
-View <a href="https://demos.creative-tim.com/purity-ui-dashboard/#/admin/dashboard?ref=readme-pud" target="_blank">example pages here</a>.
+View <a href="https://demos.creative-tim.com/purity-ui-dashboard/#/caw/dashboard?ref=readme-pud" target="_blank">example pages here</a>.
 
 **HELPFUL LINKS**
 
@@ -50,7 +50,7 @@ Let us know your thoughts below. And good luck with development!
 
 ## Table of Contents
 
-- [CAW World](https://demos.creative-tim.com/purity-ui-dashboard/#/admin/dashboard?ref=readme-pud)
+- [CAW World](https://demos.creative-tim.com/purity-ui-dashboard/#/caw/dashboard?ref=readme-pud)
 - [Table of Contents](#table-of-contents)
 - [Versions](#versions)
 - [Demo](#demo)
@@ -74,14 +74,14 @@ Let us know your thoughts below. And good luck with development!
 
 ## Demo
 
-- [Dashboard](https://demos.creative-tim.com/purity-ui-dashboard/#/admin/dashboard?ref=readme-pud)
-- [Tables page](https://demos.creative-tim.com/purity-ui-dashboard/#/admin/tables?ref=readme-pud)
-- [Billing page](https://demos.creative-tim.com/purity-ui-dashboard/#/admin/billing?ref=readme-pud)
-- [Profile page](http://demos.creative-tim.com/purity-ui-dashboard/#/admin/profile?ref=readme-pud)
+- [Dashboard](https://demos.creative-tim.com/purity-ui-dashboard/#/caw/dashboard?ref=readme-pud)
+- [Tables page](https://demos.creative-tim.com/purity-ui-dashboard/#/caw/tables?ref=readme-pud)
+- [Billing page](https://demos.creative-tim.com/purity-ui-dashboard/#/caw/billing?ref=readme-pud)
+- [Profile page](http://demos.creative-tim.com/purity-ui-dashboard/#/caw/profile?ref=readme-pud)
 - [Sign in page](https://demos.creative-tim.com/purity-ui-dashboard/#/auth/signin?ref=readme-pud)
 - [Sign up page](https://demos.creative-tim.com/purity-ui-dashboard/#/auth/signup?ref=readme-pud)
 
-[View More](https://demos.creative-tim.com/purity-ui-dashboard/#/admin/dashboard?ref=readme-pud).
+[View More](https://demos.creative-tim.com/purity-ui-dashboard/#/caw/dashboard?ref=readme-pud).
 
 ## Quick Start
 
@@ -214,7 +214,7 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- Demo: <https://demos.creative-tim.com/purity-ui-dashboard/#/admin/dashboard?ref=readme-pud>
+- Demo: <https://demos.creative-tim.com/purity-ui-dashboard/#/caw/dashboard?ref=readme-pud>
 - Download Page: <https://www.creative-tim.com/product/purity-ui-dashboard?ref=readme-pud>
 - License Agreement: <https://www.creative-tim.com/license?ref=readme-pud>
 - Support: <https://www.creative-tim.com/contact-us?ref=readme-pud>

@@ -4,7 +4,7 @@ import { RtlProvider } from 'components/RTLProvider/RTLProvider';
 import Configurator from 'components/Configurator/Configurator';
 import Footer from 'components/Footer/Footer.js';
 // Layout components
-import AdminNavbar from 'components/Navbars/AdminNavbar.js';
+import AdminNavbar from 'components/Navbars/cawNavbar.js';
 import Sidebar from 'components/Sidebar';
 import React, { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
@@ -25,7 +25,7 @@ export default function Dashboard(props) {
 	const [ sidebarVariant, setSidebarVariant ] = useState('transparent');
 	const [ fixed, setFixed ] = useState(false);
 	const getRoute = () => {
-		return window.location.pathname !== '/dashboard/full-screen-maps';
+		return window.location.pathname !== '/caw/full-screen-maps';
 	};
 	const getActiveRoute = (routes) => {
 		let activeRoute = 'Default Brand Text';
@@ -75,7 +75,7 @@ export default function Dashboard(props) {
 			if (prop.category === 'account') {
 				return getRoutes(prop.views);
 			}
-			if (prop.layout === '/rtl' || prop.layout === '/dashboard') {
+			if (prop.layout === '/rtl' || prop.layout === '/caw') {
 				return <Route path={prop.layout + prop.path} component={prop.component} key={key} />;
 			} else {
 				return null;

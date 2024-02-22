@@ -3,7 +3,7 @@ import { ChakraProvider, Portal, useDisclosure } from '@chakra-ui/react';
 import Configurator from 'components/Configurator/Configurator';
 import Footer from 'components/Footer/Footer.js';
 // Layout components
-import AdminNavbar from 'components/Navbars/AdminNavbar.js';
+import AdminNavbar from 'components/Navbars/cawNavbar.js';
 import Sidebar from 'components/Sidebar';
 import React, { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
@@ -25,7 +25,7 @@ export default function Dashboard(props) {
 	const [ fixed, setFixed ] = useState(false);
 	// functions for changing the states from components
 	const getRoute = () => {
-		return window.location.pathname !== '/dashboard/full-screen-maps';
+		return window.location.pathname !== '/caw/full-screen-maps';
 	};
 	const getActiveRoute = (routes) => {
 		let activeRoute = 'Default Brand Text';
@@ -75,7 +75,7 @@ export default function Dashboard(props) {
 			if (prop.category === 'account') {
 				return getRoutes(prop.views);
 			}
-			if (prop.layout === '/dashboard') {
+			if (prop.layout === '/caw') {
 				return <Route path={prop.layout + prop.path} component={prop.component} key={key} />;
 			} else {
 				return null;
@@ -89,7 +89,7 @@ export default function Dashboard(props) {
 		<ChakraProvider theme={theme} resetCss={false}>
 			<Sidebar
 				routes={routes}
-				logoText={'CAW World'}
+				logoText={'PURITY UI DASHBOARD'}
 				display='none'
 				sidebarVariant={sidebarVariant}
 				{...rest}
@@ -102,7 +102,7 @@ export default function Dashboard(props) {
 				<Portal>
 					<AdminNavbar
 						onOpen={onOpen}
-						logoText={'CAW World'}
+						logoText={'PURITY UI DASHBOARD'}
 						brandText={getActiveRoute(routes)}
 						secondary={getActiveNavbar(routes)}
 						fixed={fixed}
@@ -114,7 +114,7 @@ export default function Dashboard(props) {
 						<PanelContainer>
 							<Switch>
 								{getRoutes(routes)}
-								<Redirect from='/dashboard' to='/caw/dashboard' />
+								<Redirect from='/caw' to='/caw/dashboard' />
 							</Switch>
 						</PanelContainer>
 					</PanelContent>
