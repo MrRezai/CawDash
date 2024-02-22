@@ -3,7 +3,7 @@ import { ChakraProvider, Portal, useDisclosure } from '@chakra-ui/react';
 import Configurator from 'components/Configurator/Configurator';
 import Footer from 'components/Footer/Footer.js';
 // Layout components
-import AdminNavbar from 'components/Navbars/cawNavbar.js';
+import AdminNavbar from 'components/Navbars/AdminNavbar.js';
 import Sidebar from 'components/Sidebar';
 import React, { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
