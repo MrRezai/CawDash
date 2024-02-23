@@ -60,6 +60,7 @@ ReactDOM.render(
       <Switch>
         <Route path={`/caw`} component={AdminLayout} />
         <Route path={`/landing`} component={LandingLayout} />
+        <Redirect from={`/dashboard`} to="/caw" />
         <Redirect from={`/`} to="/landing" />
       </Switch>
     </HashRouter>
