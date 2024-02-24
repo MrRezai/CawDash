@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import {
-  CreativeTimLogo,
+  CAWLogo,
   DocumentIcon,
   HomeIcon,
   PersonIcon,
@@ -79,7 +79,7 @@ export default function AuthNavbar(props) {
       alignItems="center"
       color={mainText}
     >
-      <CreativeTimLogo w="32px" h="32px" me="10px" />
+      <CAWLogo w="32px" h="32px" me="10px" />
       <Text fontSize="sm" mt="3px">
         {logoText}
       </Text>
