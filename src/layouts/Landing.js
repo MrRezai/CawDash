@@ -1,6 +1,13 @@
 import React from 'react';
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { Base } from "@thirdweb-dev/chains";
+import "https://caw.world/styles/style.css"
+import "https://caw.world/styles/styles.css"
+import "https://caw.world/styles/vendor.css"
+import "https://caw.world/styles/icomoon.css"
+import "https://caw.world/styles/cryptofont.min.css"
+import "https://caw.world/styles/bootstrap.min.css"
+import "https://caw.world/styles/swiper-bundle.min.css"
 
 export default function Pages(props) {
     const disableLink = (event) => {

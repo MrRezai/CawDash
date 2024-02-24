@@ -1,5 +1,5 @@
 // Chakra imports
-import { ChakraProvider, Portal, useDisclosure } from '@chakra-ui/react';
+import { ChakraProvider, Portal, useDisclosure, useColorMode } from '@chakra-ui/react';
 import Configurator from 'components/Configurator/Configurator';
 import Footer from 'components/Footer/Footer.js';
 // Layout components
@@ -19,6 +19,7 @@ import MainPanel from '../components/Layout/MainPanel';
 import PanelContainer from '../components/Layout/PanelContainer';
 import PanelContent from '../components/Layout/PanelContent';
 export default function Dashboard(props) {
+	useColorMode()
 	const { ...rest } = props;
 	// states and functions
 	const [ sidebarVariant, setSidebarVariant ] = useState('transparent');
@@ -123,7 +124,7 @@ export default function Dashboard(props) {
 				<Portal>
 					<FixedPlugin secondary={getActiveNavbar(routes)} fixed={fixed} onOpen={onOpen} />
 				</Portal>
-				<Configurator
+				{/* <Configurator
 					secondary={getActiveNavbar(routes)}
 					isOpen={isOpen}
 					onClose={onClose}
@@ -133,7 +134,7 @@ export default function Dashboard(props) {
 					}}
 					onOpaque={() => setSidebarVariant('opaque')}
 					onTransparent={() => setSidebarVariant('transparent')}
-				/>
+				/> */}
 			</MainPanel>
 		</ChakraProvider>
 	);
