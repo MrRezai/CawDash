@@ -56,6 +56,7 @@ export default function HeaderLinks(props) {
       w={{ sm: "100%", md: "auto" }}
       alignItems="center"
       flexDirection="row"
+      gap="10%"
     >
       <SidebarResponsive
         logoText={props.logoText}
