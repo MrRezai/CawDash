@@ -28,6 +28,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import routes from "routes.js";
+import { ConnectWallet } from "@thirdweb-dev/react";
+import { Base } from "@thirdweb-dev/chains";
 
 export default function HeaderLinks(props) {
   const { variant, children, fixed, secondary, onOpen, ...rest } = props;
@@ -44,6 +46,11 @@ export default function HeaderLinks(props) {
     mainText = "white";
   }
   const settingsRef = React.useRef();
+  const cawtokenbalance = {
+    1: "0xf3b9569F82B18aEf890De263B84189bd33EBe452",
+    [Base.chainId]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+  };
+
   return (
     <Flex
       pe={{ sm: "0px", md: "16px" }}
@@ -52,15 +59,6 @@ export default function HeaderLinks(props) {
       flexDirection="row"
       gap="10%"
     >
-      <ConnectWallet style={{}}
-        theme={"dark"}
-        switchToActiveChain={true}
-        modalSize={"wide"}
-        hideTestnetFaucet={true}
-        className="ConnectButton-margin"
-        auth={{ loginOptional: false }}
-        displayBalanceToken={cawtokenbalance}
-      />
       <Menu>
         <MenuButton>
           <BellIcon color={navbarIcon} w="24px" h="24px" />
@@ -97,6 +95,15 @@ export default function HeaderLinks(props) {
           </Flex>
         </MenuList>
       </Menu>
+      <ConnectWallet style={{}}
+        theme={"dark"}
+        switchToActiveChain={true}
+        modalSize={"wide"}
+        hideTestnetFaucet={true}
+        className="ConnectButton-margin"
+        auth={{ loginOptional: false }}
+        displayBalanceToken={cawtokenbalance}
+      />
     </Flex>
   );
 }

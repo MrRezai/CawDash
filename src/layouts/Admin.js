@@ -86,7 +86,7 @@ export default function Dashboard(props) {
 	document.documentElement.dir = 'ltr';
 
 
-	// setFixed(true)
+	setFixed(true)
 
 
 	// Chakra Color Mode
