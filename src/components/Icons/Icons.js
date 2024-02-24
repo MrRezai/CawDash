@@ -109,6 +109,17 @@ export const CAWLogo = createIcon({
       </g>
     </g>
   ),
+
+  //   <chakra.svg
+  //   height="50px"
+  //   width="50px"
+  //   viewBox="0 0 100 100"
+  //   fill="none"
+  //   xmlns="http://www.w3.org/2000/svg"
+  //   color={fill}
+  //   {...props}
+  // >
+  // </chakra.svg>
 });
 
 export const CreditIcon = createIcon({
