@@ -22,7 +22,7 @@ export default function Dashboard(props) {
 	const { ...rest } = props;
 	// states and functions
 	const [ sidebarVariant, setSidebarVariant ] = useState('transparent');
-	const [ fixed, setFixed ] = useState(false);
+	const [ fixed, setFixed ] = useState(true);
 	// functions for changing the states from components
 	const getRoute = () => {
 		return window.location.pathname !== '/caw/full-screen-maps';
@@ -120,20 +120,6 @@ export default function Dashboard(props) {
 					</PanelContent>
 				) : null}
 				<Footer />
-				<Portal>
-					<FixedPlugin secondary={getActiveNavbar(routes)} fixed={fixed} onOpen={onOpen} />
-				</Portal>
-				<Configurator
-					secondary={getActiveNavbar(routes)}
-					isOpen={isOpen}
-					onClose={onClose}
-					isChecked={fixed}
-					onSwitch={(value) => {
-						setFixed(value);
-					}}
-					onOpaque={() => setSidebarVariant('opaque')}
-					onTransparent={() => setSidebarVariant('transparent')}
-				/>
 			</MainPanel>
 		</ChakraProvider>
 	);
