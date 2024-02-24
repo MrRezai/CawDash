@@ -58,12 +58,14 @@ export default function HeaderLinks(props) {
       flexDirection="row"
       gap="10%"
     >
-      <SidebarResponsive
-        logoText={props.logoText}
-        secondary={props.secondary}
-        routes={routes}
-        // logo={logo}
-        {...rest}
+      <ConnectWallet style={{}}
+        theme={"dark"}
+        switchToActiveChain={true}
+        modalSize={"wide"}
+        hideTestnetFaucet={true}
+        className="ConnectButton-margin"
+        auth={{ loginOptional: false }}
+        displayBalanceToken={cawtokenbalance}
       />
       <Menu>
         <MenuButton>
@@ -101,15 +103,6 @@ export default function HeaderLinks(props) {
           </Flex>
         </MenuList>
       </Menu>
-      <ConnectWallet style={{}}
-        theme={"dark"}
-        switchToActiveChain={true}
-        modalSize={"wide"}
-        hideTestnetFaucet={true}
-        className="ConnectButton-margin"
-        auth={{ loginOptional: false }}
-        displayBalanceToken={cawtokenbalance}
-      />
     </Flex>
   );
 }
