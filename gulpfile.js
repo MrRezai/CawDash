@@ -8,7 +8,13 @@ gulp.task("licenses", async function () {
     .pipe(
       gap.prependText(`/*!
 
-      How are you today ?
+      =========================================================
+      * CAW World - v1.0.1
+      =========================================================
+      
+      * How are you today ?
+      
+      =========================================================
       
       */`)
     )
@@ -18,7 +24,19 @@ gulp.task("licenses", async function () {
   gulp
     .src("build/index.html", { base: "./" })
     .pipe(
-      gap.prependText(`<!-- How are you today ? -->`)
+      gap.prependText(`<!--
+      /*!
+      
+      =========================================================
+      * CAW World - v1.0.1
+      =========================================================
+      
+      * How are you today ?
+      
+      =========================================================
+      
+      */
+      -->`)
     )
     .pipe(gulp.dest("./", { overwrite: true }));
 
@@ -28,7 +46,13 @@ gulp.task("licenses", async function () {
     .pipe(
       gap.prependText(`/*!
 
-      How are you today ?
+      =========================================================
+      * CAW World - v1.0.1
+      =========================================================
+      
+      * How are you today ?
+      
+      =========================================================
       
       */`)
     )
