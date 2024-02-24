@@ -85,6 +85,11 @@ export default function Dashboard(props) {
 	};
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	document.documentElement.dir = 'ltr';
+
+
+	setFixed(true)
+
+
 	// Chakra Color Mode
 	return (
 		<ChakraProvider theme={theme} resetCss={false}>
@@ -124,7 +129,7 @@ export default function Dashboard(props) {
 				<Portal>
 					<FixedPlugin secondary={getActiveNavbar(routes)} fixed={fixed} onOpen={onOpen} />
 				</Portal>
-				<Configurator
+				{/* <Configurator
 					secondary={getActiveNavbar(routes)}
 					isOpen={isOpen}
 					onClose={onClose}
@@ -134,7 +139,7 @@ export default function Dashboard(props) {
 					}}
 					onOpaque={() => setSidebarVariant('opaque')}
 					onTransparent={() => setSidebarVariant('transparent')}
-				/>
+				/> */}
 			</MainPanel>
 		</ChakraProvider>
 	);
