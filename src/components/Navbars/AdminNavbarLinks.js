@@ -66,7 +66,7 @@ export default function HeaderLinks(props) {
       />
       <Menu>
         <MenuButton>
-          <BellIcon color={navbarIcon} w="18px" h="18px" />
+          <BellIcon color={navbarIcon} w="24px" h="24px" />
         </MenuButton>
         <MenuList p="16px 8px">
           <Flex flexDirection="column">
